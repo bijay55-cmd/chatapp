@@ -202,6 +202,68 @@ padding: 0 10px;
     border-radius: 250px 250px 0 0;
     z-index:-1;
 }
+/*Animation start*/
+.chatapp1{
+    transform-origin: left;
+    opacity: 0;
+    animation:1s bubblepop 1.8s, 1s fadein 1.8s forwards;
+}
+.chatapp2{
+    opacity: 0;
+    transform-origin: left;
+    animation: 1s bubblepop 2.7s, 1s fadein 2.7s forwards;
+}
+.chatapp3{
+    opacity:0;
+    transform-origin: right;
+    animation: 1s bubblepop 3.6s, 1s fadein 3.6s forwards;
+}
+.chatapp4{
+    opacity:0;
+    transform-origin: right;
+    animation: 1s bubblepop 4.5s, 1s fadein 4.5s forwards;
+}
+.chatapp5{
+    opacity: 0;
+    transform-origin: right;
+    animation: 1s bubblepop 5.5s, 1s fadein 5.5s forwards;
+}
+.chatapp6{
+    opacity: 0;
+    transform-origin: left;
+    animation: 1s bubblepop 6.5s, 1s fadein 6.5s forwards;
+}
+.chatapp7{
+    opacity: 0;
+    transform-origin: left;
+    animation: 1s bubblepop 7.5s, 1s fadein 7.5s forwards;
+}
+
+.chatapp8{
+    opacity:0;
+    transform-origin: left;
+    animation: 1s bubblepop 8.5s, 1s fadein 8.5s forwards;
+}
+
+/*Animation keyframes*/
+@keyframes bubblepop{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity:1;
+    }
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @media screen and (min-width: 664px) and (max-width: 800px){
     body::after{
         width:300px;
